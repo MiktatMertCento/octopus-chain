@@ -124,7 +124,7 @@ jobs:
             }}
           wait-on: http://127.0.0.1:3000
           wait-on-timeout: 120
-          spec: ./packages/arb-token-bridge-ui/tests/e2e/specs/*
+          spec: ./packages/octopus-bridge-ui/tests/e2e/specs/*
         env:
           DISPLAY: :0.0
           TEST_FILE: ${{ matrix.test.file }}
@@ -145,8 +145,8 @@ jobs:
         with:
           name: e2e-artifacts-${{ github.sha }}-${{ matrix.test.name }}-${{ matrix.test.type }}
           path: |
-            ./packages/arb-token-bridge-ui/cypress/videos
-            ./packages/arb-token-bridge-ui/cypress/screenshots
+            ./packages/octopus-bridge-ui/cypress/videos
+            ./packages/octopus-bridge-ui/cypress/screenshots
           if-no-files-found: 'ignore'
         continue-on-error: true
 

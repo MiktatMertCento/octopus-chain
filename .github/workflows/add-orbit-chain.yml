@@ -66,7 +66,7 @@ jobs:
         run: git checkout -b ${{ steps.branch.outputs.name }}
 
       - name: Run addOrbitChain script
-        run: yarn workspace scripts add-orbit-chain ../../packages/arb-token-bridge-ui/src/util/orbitChainsData.json
+        run: yarn workspace scripts add-orbit-chain ../../packages/octopus-bridge-ui/src/util/orbitChainsData.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number || inputs.issue_number }}
@@ -74,12 +74,12 @@ jobs:
           NEXT_PUBLIC_INFURA_KEY_HOLESKY: ${{ secrets.NEXT_PUBLIC_INFURA_KEY_HOLESKY }}
 
       - name: Format files
-        run: yarn prettier --write "packages/arb-token-bridge-ui/src/**/*.{ts,tsx,js,jsx,json}"
+        run: yarn prettier --write "packages/octopus-bridge-ui/src/**/*.{ts,tsx,js,jsx,json}"
 
       - name: Commit changes
         run: |
-          git add packages/arb-token-bridge-ui/src/**/*
-          git add packages/arb-token-bridge-ui/public/**/*
+          git add packages/octopus-bridge-ui/src/**/*
+          git add packages/octopus-bridge-ui/public/**/*
           git status
           git commit -m "feat: add ${{ steps.issue.outputs.result }}"
           git push origin ${{ steps.branch.outputs.name }}

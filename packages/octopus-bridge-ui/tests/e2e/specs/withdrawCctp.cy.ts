@@ -2,8 +2,8 @@
  * When user wants to bridge USDC through CCTP from L2 to L1
  */
 
-import { CommonAddress } from 'packages/arb-token-bridge-ui/src/util/CommonAddressUtils'
-import { formatAmount } from 'packages/arb-token-bridge-ui/src/util/NumberUtils'
+import { CommonAddress } from 'packages/octopus-bridge-uii/src/util/CommonAddressUtils'
+import { formatAmount } from 'packages/octopus-bridge-uii/src/util/NumberUtils'
 
 // common function for this cctp withdrawal
 export const confirmAndApproveCctpWithdrawal = () => {

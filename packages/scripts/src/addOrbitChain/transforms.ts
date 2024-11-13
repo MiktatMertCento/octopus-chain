@@ -266,7 +266,7 @@ export const fetchAndProcessImage = async (
     }
   } else {
     // Handle local paths
-    const localPath = `../../arb-token-bridge-ui/public/${urlOrPath}`;
+    const localPath = `../../octopus-bridge-ui/public/${urlOrPath}`;
     if (!fs.existsSync(localPath)) {
       throw new Error(
         `Provided local path '${localPath}' did not match any existing images.`
@@ -320,7 +320,7 @@ export const fetchAndSaveImage = async (
 
   const fullPath = path.join(
     process.cwd(),
-    "../../packages/arb-token-bridge-ui/public/images"
+    "../../packages/octopus-bridge-ui/public/images"
   );
 
   // Save the file locally

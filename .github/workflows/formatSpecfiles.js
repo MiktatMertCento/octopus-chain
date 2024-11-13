@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-const specFiles = require("../../packages/arb-token-bridge-ui/tests/e2e/specfiles.json");
-const cctpFiles = require("../../packages/arb-token-bridge-ui/tests/e2e/cctp.json");
+const specFiles = require("../../packages/octopus-bridge-ui/tests/e2e/specfiles.json");
+const cctpFiles = require("../../packages/octopus-bridge-ui/tests/e2e/cctp.json");
 
 const tests = [];
 

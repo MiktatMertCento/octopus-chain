@@ -17,7 +17,7 @@ module.exports = {
       version: "detect",
     },
     next: {
-      rootDir: "packages/arb-token-bridge-ui/",
+      rootDir: "packages/octopus-bridge-ui/",
     },
   },
   rules: {

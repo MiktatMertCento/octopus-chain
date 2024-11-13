@@ -207,7 +207,7 @@ describe("Transforms", () => {
       process.cwd(),
       "..",
       "..",
-      "arb-token-bridge-ui",
+      "octopus-bridge-ui",
       "public",
       "images",
       "downloaded_chain_logo.png"
@@ -245,7 +245,7 @@ describe("Transforms", () => {
         process.cwd(),
         "..",
         "..",
-        "arb-token-bridge-ui",
+        "octopus-bridge-ui",
         "public",
         savedImagePath
       );
@@ -320,7 +320,7 @@ const saveImageLocally = (
     process.cwd(),
     "..",
     "..",
-    "arb-token-bridge-ui",
+    "octopus-bridge-ui",
     "public",
     imageSavePath
   );

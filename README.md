@@ -1,6 +1,3 @@
- 
- 
-
 ## Steps to run the code locally
 
 1. Clone the Arbitrum token bridge repository from Github onto your local machine
@@ -26,7 +23,7 @@
    1. Copy the existing env.local.sample file present.
 
       ```bash
-      $ cp ./packages/arb-token-bridge-ui/.env.local.sample  ./packages/arb-token-bridge-ui/.env
+      $ cp ./packages/octopus-bridge-ui/.env.local.sample  ./packages/octopus-bridge-ui/.env
       ```
 
    2. In `.env` created, add `NEXT_PUBLIC_INFURA_KEY=my-infura-key`
@@ -37,7 +34,7 @@
 
    - `NEXT_PUBLIC_ETHEREUM_RPC_URL=my-eth-node`
    - `NEXT_PUBLIC_SEPOLIA_RPC_URL=my-sepolia-node`
-     (see [.env.sample](./packages/arb-token-bridge-ui/.env.sample))
+     (see [.env.sample](./packages/octopus-bridge-ui/.env.sample))
      If no custom URL is provided, Infura will be used by default.
 
 5. Build the project and internal packages
@@ -61,5 +58,3 @@
 ---
 
 <br />
-
- 
