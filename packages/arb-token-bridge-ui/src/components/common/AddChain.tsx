@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { addArbitrumSepolia, addOctopus } from '../../util/metamask'
 import { Button } from '@mui/material'
 import { useNetworks } from '../../hooks/useNetworks'
 import { useNetworksRelationship } from '../../hooks/useNetworksRelationship'
@@ -22,22 +22,21 @@ export const AddChainButton = () => {
     <div>
       {(isParentChainEthereum && isConnectedToArbitrum) ||
       isConnectedToOrbitChain ? (
-        <AddComplareButton />
+        <AddOctupus />
       ) : (
-        <AddBaseSepoliaButton />
+        <AddArbitrumSepoliaButton />
       )}
     </div>
   )
 }
 
-export const AddBaseSepoliaButton = () => {
+export const AddArbitrumSepoliaButton = () => {
   return (
     <div>
-      <Button
-        className="   rounded-lg    border-2 text-sm   font-medium hover:border-2       "
-        variant="outlined"
-        sx={{ color: '#1377BB' }}
-        title="add testnet base sepolia chain to your metamask"
+      <button
+        className="   flex  rounded-lg border-2 border-[#7F64C2] px-2  py-2 text-base   font-medium text-[#6c55a6] transition-all duration-300 ease-in-out hover:border-2 hover:border-[#4c4c6e]       "
+        title="add testnet Arbitrum sepolia chain to your metamask"
+        onClick={addArbitrumSepolia}
       >
         <Image
           src={MetamaskLogo}
@@ -46,19 +45,18 @@ export const AddBaseSepoliaButton = () => {
           alt="metamask logo"
           className="mr-2"
         />
-        Add Base Sepolia
-      </Button>
+        Add Arbitrum Sepolia
+      </button>
     </div>
   )
 }
-export const AddComplareButton = () => {
+export const AddOctupus = () => {
   return (
     <div>
-      <Button
-        className="   rounded-lg    border-2 text-sm   font-medium hover:border-2       "
-        variant="outlined"
-        sx={{ color: '#1377BB' }}
-        title="add testnet Complare chain to your metamask"
+      <button
+        className=" flex  rounded-lg border-2 border-[#7F64C2] px-2  py-2 text-base   font-medium text-[#6c55a6] transition-all duration-300 ease-in-out hover:border-2 hover:border-[#4c4c6e]       "
+        title="add testnet Arbitrum sepolia chain to your metamask"
+        onClick={addOctopus}
       >
         <Image
           src={MetamaskLogo}
@@ -67,8 +65,8 @@ export const AddComplareButton = () => {
           alt="metamask logo"
           className="mr-2"
         />
-        Add Complere
-      </Button>
+        Add Octopus
+      </button>
     </div>
   )
 }
