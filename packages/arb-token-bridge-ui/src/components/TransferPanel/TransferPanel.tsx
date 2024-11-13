@@ -1021,8 +1021,6 @@ export function TransferPanel() {
           </Tippy>
         )}
       </div>
-
-      {showProjectsListing && <ProjectsListing />}
     </>
   )
 }

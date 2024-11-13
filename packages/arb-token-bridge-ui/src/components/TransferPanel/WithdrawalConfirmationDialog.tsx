@@ -97,36 +97,12 @@ export function WithdrawalConfirmationDialog(
     >
       <div className="flex flex-col pt-4">
         <Tab.Group onChange={setSelectedIndex}>
-          <Tab.List className="border-b border-gray-dark">
-            {isArbitrumOne && <TabButton>Third party bridge</TabButton>}
-            <TabButton>Arbitrum’s bridge</TabButton>
-          </Tab.List>
-
-          {isArbitrumOne && (
-            <Tab.Panel className="flex flex-col space-y-4 py-4">
-              <div className="flex flex-col space-y-4">
-                <p className="font-light">
-                  Get your funds in under 30 min with a fast exit bridge.
-                </p>
-              </div>
-
-              <BridgesTable bridgeList={fastBridges} />
-              <SecurityNotGuaranteed />
-            </Tab.Panel>
-          )}
-
           <Tab.Panel className="flex flex-col justify-between">
             <div className="flex flex-col space-y-4 py-4">
               <div className="flex flex-col space-y-4">
                 <p className="font-light">
                   Get your funds in ~{confirmationPeriod} and pay a small fee
                   twice.{' '}
-                  <ExternalLink
-                    href={CONFIRMATION_PERIOD_ARTICLE_LINK}
-                    className="underline"
-                  >
-                    Learn more.
-                  </ExternalLink>
                 </p>
               </div>
 
@@ -156,39 +132,6 @@ export function WithdrawalConfirmationDialog(
                   checked={checkbox2Checked}
                   onChange={setCheckbox2Checked}
                 />
-
-                <div className="flex">
-                  <SecurityGuaranteed />
-                </div>
-
-                <div className="flex flex-col justify-center space-y-2.5 rounded border border-gray-dark bg-black/80 py-4 align-middle text-white">
-                  <p className="text-center text-sm font-light">
-                    Set calendar reminder for {confirmationPeriod} from now
-                  </p>
-                  <div className="flex justify-center">
-                    <ExternalLink
-                      href={getCalendarUrl(
-                        estimatedConfirmationDate,
-                        props.amount,
-                        selectedToken?.symbol || nativeCurrency.symbol,
-                        getNetworkName(childChain.id)
-                      )}
-                      onClick={() => trackEvent('Add to Google Calendar Click')}
-                      className="arb-hover flex items-center space-x-2 rounded border border-white p-2 text-sm"
-                    >
-                      <Image
-                        src="/images/GoogleCalendar.svg"
-                        alt="Google Calendar Icon"
-                        width={24}
-                        height={24}
-                      />
-                      <span>Add to Google calendar</span>
-                    </ExternalLink>
-                  </div>
-                  <p className="text-center text-xs font-light">
-                    We don’t store any email data
-                  </p>
-                </div>
               </div>
             </div>
           </Tab.Panel>
