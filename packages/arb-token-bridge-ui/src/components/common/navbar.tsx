@@ -10,7 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import logo from '/public/images/ArbitrumLogo.svg'
+import logo from '/public/icons/octopusChain.png'
 
 import { HeaderAccountPopover } from './HeaderAccountPopover'
 
@@ -53,9 +53,9 @@ function ResponsiveAppBar({ wallet, marginBelow }: ResponsiveAppBarProps) {
               width={40}
               height={40}
               alt="web Complare logo"
-              className=" mr-2"
+              className=" mr-2 rounded-full"
             />
-            <h1 className="text-3xl font-semibold  text-white">Complere</h1>
+            <h1 className="text-3xl font-semibold  text-white">Octopus</h1>
           </Box>
           <Box
             sx={{
@@ -175,9 +175,9 @@ function ResponsiveAppBar({ wallet, marginBelow }: ResponsiveAppBarProps) {
               width={40}
               height={40}
               alt="mobile Complare logo"
-              className=" mr-2"
+              className=" mr-2 rounded-full"
             />
-            <h1 className="text-3xl font-semibold  text-white">Complere</h1>
+            <h1 className="text-3xl font-semibold  text-white">Octopus</h1>
           </Box>
 
           {/* Web Links */}

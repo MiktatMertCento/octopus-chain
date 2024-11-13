@@ -34,7 +34,7 @@ export const AddArbitrumSepoliaButton = () => {
   return (
     <div>
       <button
-        className="   flex  rounded-lg border-2 border-[#7F64C2] px-2  py-2 text-base   font-medium text-[#6c55a6] transition-all duration-300 ease-in-out hover:border-2 hover:border-[#4c4c6e]       "
+        className="   flex  rounded-lg border-2 border-[#44356a] px-2  py-1 text-base   font-medium text-[#6c55a6] transition-all duration-300 ease-in-out hover:border-2 hover:border-[#7F64C2]       "
         title="add testnet Arbitrum sepolia chain to your metamask"
         onClick={addArbitrumSepolia}
       >
