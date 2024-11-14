@@ -10,8 +10,8 @@ export async function addOctopus() {
             rpcUrls: ['https://testnet.rpc.o3layer.com'],
             chainName: 'octopus-devnet',
             nativeCurrency: {
-              name: '03',
-              symbol: 'ETH',
+              name: 'O3',
+              symbol: 'O3',
               decimals: 18
             },
             blockExplorerUrls: ['https://testnet.rpc.o3layer.com']

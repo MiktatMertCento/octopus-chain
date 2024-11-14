@@ -1,8 +1,8 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export const siteTitle = 'Octopus Bridge Ui'
-const siteDomain = 'https://bridge.arbitrum.io'
-const siteDescription = ''
+const siteDomain = 'https://octopus-bridge-ui.vercel.app/'
+const siteDescription = 'Octopus Chain Bridge Ui'
 
 export default function Document() {
   return (
@@ -11,14 +11,14 @@ export default function Document() {
         <meta charSet="utf-8" />
         <link rel="icon" href="/logo.png" />
 
-        <meta name="theme-color" content="#000000" />
+        <meta name="theme-color" content="#1D1D2B" />
         <meta name="description" content={siteDescription} />
         {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:url" content={siteDomain} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={siteTitle} />
         <meta property="og:description" content={siteDescription} />
-        <meta property="og:image" content={`${siteDomain}/og-image.jpg`} />
+        <meta property="og:image" content={`${siteDomain}/bg-image.png`} />
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -26,7 +26,7 @@ export default function Document() {
         <meta property="twitter:url" content={siteDomain} />
         <meta name="twitter:title" content={siteTitle} />
         <meta name="twitter:description" content={siteDescription} />
-        <meta name="twitter:image" content={`${siteDomain}/og-image.jpg`} />
+        <meta name="twitter:image" content={`${siteDomain}/bg-image.png`} />
       </Head>
       <body>
         <Main />
