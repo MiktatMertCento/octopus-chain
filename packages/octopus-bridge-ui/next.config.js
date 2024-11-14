@@ -5,7 +5,6 @@
  **/
 
 module.exports = {
-  distDir: 'build',
   productionBrowserSourceMaps: true,
   reactStrictMode: true,
   images: {
