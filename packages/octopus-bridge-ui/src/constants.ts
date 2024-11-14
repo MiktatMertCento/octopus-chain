@@ -2,9 +2,9 @@ export const TOS_VERSION = 2
 
 export const TOS_LOCALSTORAGE_KEY = 'arbitrum:bridge:tos-v' + TOS_VERSION
 
-const SUPPORT_LINK_BASE = 'https://support.arbitrum.io'
+const SUPPORT_LINK_BASE = 'https://t.me/O3LayerOfficial'
 
-export const GET_HELP_LINK = `${SUPPORT_LINK_BASE}/hc/en-us/requests/new?ticket_form_id=18155929976987`
+export const GET_HELP_LINK = `https://t.me/O3LayerOfficial`
 
 export const PORTAL_DOMAIN = 'https://portal.arbitrum.io'
 

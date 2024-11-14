@@ -66,7 +66,7 @@ export const SidePanel = ({
           leaveTo="opacity-0"
         >
           {/* The backdrop, rendered as a fixed sibling to the panel container */}
-          <div className="fixed inset-0 bg-dark" aria-hidden="true" />
+          <div className="fixed inset-0 bg-[#161618]" aria-hidden="true" />
         </Transition.Child>
 
         {/* Full-screen container to center the panel */}
@@ -84,14 +84,14 @@ export const SidePanel = ({
             {/* The heading of dialog  */}
             <Dialog.Panel
               className={twMerge(
-                'side-panel flex h-full w-screen max-w-[1000px] flex-col border-l border-gray-dark bg-black',
+                'side-panel flex h-full w-screen max-w-[1000px] flex-col border-l border-gray-dark bg-[#161618]',
                 panelClassNameOverrides,
                 scrollable && 'overflow-y-auto'
               )}
             >
               <Dialog.Title
                 className={twMerge(
-                  'sticky top-0 z-50 mx-4 flex flex-row justify-between bg-black pt-4 text-white',
+                  'sticky top-0 z-50 mx-4 flex flex-row justify-between bg-[#161618] pt-4 text-white',
                   !heading && 'pb-4'
                 )}
               >
