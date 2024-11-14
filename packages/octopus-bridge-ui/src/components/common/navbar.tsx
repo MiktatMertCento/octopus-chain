@@ -10,8 +10,6 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import logo from '/public/icons/octopusChain.png'
-
 import { HeaderAccountPopover } from './HeaderAccountPopover'
 
 import { AddChainButton } from './AddChain'
@@ -49,10 +47,10 @@ function ResponsiveAppBar({ wallet, marginBelow }: ResponsiveAppBarProps) {
             }}
           >
             <Image
-              src={logo}
+              src={'/icons/octopusChain.png'}
               width={40}
               height={40}
-              alt="web Complare logo"
+              alt="web logo"
               className=" mr-2 rounded-full"
             />
             <h1 className="text-3xl font-semibold  text-white">Octopus</h1>
@@ -171,10 +169,10 @@ function ResponsiveAppBar({ wallet, marginBelow }: ResponsiveAppBarProps) {
             }}
           >
             <Image
-              src={logo}
+              src={'/icons/octopusChain.png'}
               width={40}
               height={40}
-              alt="mobile Complare logo"
+              alt="mobile e logo"
               className=" mr-2 rounded-full"
             />
             <h1 className="text-3xl font-semibold  text-white">Octopus</h1>

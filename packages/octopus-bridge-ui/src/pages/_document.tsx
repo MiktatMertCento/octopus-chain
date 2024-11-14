@@ -1,9 +1,8 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
-export const siteTitle = 'Bridge to Arbitrum'
+export const siteTitle = 'Octopus Bridge Ui'
 const siteDomain = 'https://bridge.arbitrum.io'
-const siteDescription =
-  'Built to scale Ethereum, Arbitrum brings you 10x lower costs while inheriting Ethereum’s security model. Arbitrum is a Layer 2 Optimistic Rollup.'
+const siteDescription = ''
 
 export default function Document() {
   return (

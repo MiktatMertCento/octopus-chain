@@ -46,8 +46,8 @@ export function isSupportedChainId(
     // l3Local.id,
     // local.id,
 
-    ...getOrbitChains().map(chain => chain.chainId),
-    ...customChainIds
+    ...getOrbitChains().map(chain => chain.chainId)
+    // ...customChainIds
   ].includes(chainId)
 }
 
@@ -68,8 +68,8 @@ export function sanitizeQueryParams({
       !isSupportedChainId(destinationChainId))
   ) {
     return {
-      sourceChainId: ChainId.Ethereum,
-      destinationChainId: ChainId.ArbitrumOne
+      sourceChainId: ChainId.ArbitrumSepolia,
+      destinationChainId: ChainId.octupus
     }
   }
 
@@ -82,8 +82,8 @@ export function sanitizeQueryParams({
 
     if (typeof defaultSourceChainId === 'undefined') {
       return {
-        sourceChainId: ChainId.Ethereum,
-        destinationChainId: ChainId.ArbitrumOne
+        sourceChainId: ChainId.ArbitrumSepolia,
+        destinationChainId: ChainId.octupus
       }
     }
 
@@ -99,8 +99,8 @@ export function sanitizeQueryParams({
 
     if (typeof defaultDestinationChainId === 'undefined') {
       return {
-        sourceChainId: ChainId.Ethereum,
-        destinationChainId: ChainId.ArbitrumOne
+        sourceChainId: ChainId.ArbitrumSepolia,
+        destinationChainId: ChainId.octupus
       }
     }
 

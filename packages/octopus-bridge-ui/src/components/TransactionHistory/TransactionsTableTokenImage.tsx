@@ -60,6 +60,7 @@ export const TransactionsTableTokenImage = ({
         width={20}
         alt="ETH logo"
         src={EthereumLogoRoundLight}
+        className="rounded-full"
       />
     )
   }
@@ -70,6 +71,10 @@ export const TransactionsTableTokenImage = ({
 
   return (
     // eslint-disable-next-line @next/next/no-img-element
-    <img className="w-[20px]" alt={tx.asset + ' logo'} src={tokenLogoSrc} />
+    <img
+      className="w-[20px] rounded-full"
+      alt={tx.asset + ' logo'}
+      src={tokenLogoSrc}
+    />
   )
 }

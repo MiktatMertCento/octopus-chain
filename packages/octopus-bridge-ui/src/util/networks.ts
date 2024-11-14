@@ -28,7 +28,8 @@ export enum ChainId {
   ArbitrumLocal = 412346,
   BaseSepolia = 84532,
   // L3 Testnets
-  L3Local = 333333
+  L3Local = 333333,
+  octupus = 75814
 }
 
 /** The network that you reference when calling `block.number` in solidity */
