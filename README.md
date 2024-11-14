@@ -1,6 +1,6 @@
 ## Steps to run the code locally
 
-1. Clone the Arbitrum token bridge repository from Github onto your local machine
+1. Clone the repository from Github onto your local machine
 
    ```bash
    $ git clone https://github.com/umershaikh123/octopus-chain.git
