@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
-export const siteTitle = 'Octopus Bridge Ui'
+export const siteTitle = 'O3 Layer Devnet'
 const siteDomain = 'https://octopus-bridge-ui.vercel.app/'
 const siteDescription = 'Octopus Chain Bridge Ui'
 
@@ -9,7 +9,8 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charSet="utf-8" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/o3logo.png" />
+        {/* <link rel="icon" href="/o3-logo.png" /> */}
 
         <meta name="theme-color" content="#1D1D2B" />
         <meta name="description" content={siteDescription} />
