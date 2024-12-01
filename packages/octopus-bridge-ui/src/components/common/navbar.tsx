@@ -47,13 +47,13 @@ function ResponsiveAppBar({ wallet, marginBelow }: ResponsiveAppBarProps) {
             }}
           >
             <Image
-              src={'/icons/octopusChain.png'}
-              width={40}
-              height={40}
+              src={'/icons/o3_transparent.png'}
+              width={190}
+              height={190}
               alt="web logo"
-              className=" mr-2 rounded-full"
+              className="p-1"
             />
-            <h1 className="text-3xl font-semibold  text-white">Octopus</h1>
+            {/* <h1 className="text-3xl font-semibold  text-white">O3 Layer</h1> */}
           </Box>
           <Box
             sx={{
