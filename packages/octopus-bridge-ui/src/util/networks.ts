@@ -246,7 +246,7 @@ export const rpcURLs: { [chainId: number]: string } = {
   }),
   [ChainId.octupus]: loadEnvironmentVariableWithFallback({
     env: process.env.NEXT_PUBLIC_OCTOPUS_RPC_URL,
-    fallback: ''
+    fallback: 'https://testnet.rpc.o3layer.com'
   })
 }
 
