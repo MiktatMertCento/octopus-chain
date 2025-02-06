@@ -6,9 +6,9 @@ export async function addOctopus() {
         method: 'wallet_addEthereumChain',
         params: [
           {
-            chainId: '0x12826',
+            chainId: '0xC794716BC',
             rpcUrls: ['https://testnet.rpc.o3layer.com'],
-            chainName: 'octopus-devnet',
+            chainName: 'octopus-testnet',
             nativeCurrency: {
               name: 'O3',
               symbol: 'O3',

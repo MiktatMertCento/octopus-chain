@@ -29,7 +29,7 @@ export enum ChainId {
   BaseSepolia = 84532,
   // L3 Testnets
   L3Local = 333333,
-  octupus = 75814
+  octupus = 53574309564
 }
 
 /** The network that you reference when calling `block.number` in solidity */
@@ -243,6 +243,10 @@ export const rpcURLs: { [chainId: number]: string } = {
   [ChainId.BaseSepolia]: loadEnvironmentVariableWithFallback({
     env: chainIdToInfuraUrl(ChainId.BaseSepolia),
     fallback: 'https://sepolia.base.org'
+  }),
+  [ChainId.octupus]: loadEnvironmentVariableWithFallback({
+    env: process.env.NEXT_PUBLIC_OCTOPUS_RPC_URL,
+    fallback: ''
   })
 }
 
@@ -258,7 +262,8 @@ export const explorerUrls: { [chainId: number]: string } = {
   [ChainId.Base]: 'https://basescan.org',
   // L2 Testnets
   [ChainId.ArbitrumSepolia]: 'https://sepolia.arbiscan.io',
-  [ChainId.BaseSepolia]: 'https://sepolia.basescan.org'
+  [ChainId.BaseSepolia]: 'https://sepolia.basescan.org',
+  [ChainId.octupus]: process.env.NEXT_PUBLIC_OCTOPUS_EXPLORER_URL || ''
 }
 
 export const getExplorerUrl = (chainId: ChainId) => {
@@ -498,7 +503,7 @@ export function isNetwork(chainId: ChainId) {
   const isSepolia = chainId === ChainId.Sepolia
   const isHolesky = chainId === ChainId.Holesky
   const isLocal = chainId === ChainId.Local
-
+  const isOctupus = chainId === ChainId.octupus
   const isArbitrumOne = chainId === ChainId.ArbitrumOne
   const isArbitrumNova = chainId === ChainId.ArbitrumNova
   const isArbitrumSepolia = chainId === ChainId.ArbitrumSepolia
@@ -535,6 +540,7 @@ export function isNetwork(chainId: ChainId) {
     isBaseSepolia,
     // Orbit chains
     isOrbitChain,
+    isOctupus,
     // General
     isTestnet: isTestnetChain(chainId),
     // Core Chain is a chain category for the UI
