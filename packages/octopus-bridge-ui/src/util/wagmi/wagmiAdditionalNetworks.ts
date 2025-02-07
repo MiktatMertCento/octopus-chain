@@ -117,6 +117,32 @@ export const baseSepolia: Chain = {
   }
 }
 
+export const octupusChain: Chain = {
+  id: ChainId.octupus,
+  name: 'octopus-testnet',
+  network: 'octopus-testnet',
+  nativeCurrency: {
+    name: 'O3',
+    symbol: 'O3',
+    decimals: 18
+  },
+  rpcUrls: {
+    default: {
+      http: [rpcURLs[ChainId.octupus]!]
+    },
+    public: {
+      http: [rpcURLs[ChainId.octupus]!]
+    }
+  },
+  blockExplorers: {
+    etherscan: {
+      name: 'octoScan',
+      url: explorerUrls[ChainId.octupus]!
+    },
+    default: { name: 'octoScan', url: explorerUrls[ChainId.octupus]! }
+  }
+}
+
 export const arbitrumNova: Chain = {
   id: ChainId.ArbitrumNova,
   name: 'Arbitrum Nova',
