@@ -263,7 +263,9 @@ export const explorerUrls: { [chainId: number]: string } = {
   // L2 Testnets
   [ChainId.ArbitrumSepolia]: 'https://sepolia.arbiscan.io',
   [ChainId.BaseSepolia]: 'https://sepolia.basescan.org',
-  [ChainId.octupus]: process.env.NEXT_PUBLIC_OCTOPUS_EXPLORER_URL || ''
+  [ChainId.octupus]:
+    process.env.NEXT_PUBLIC_OCTOPUS_EXPLORER_URL ||
+    'https://testnet.explorer.o3layer.com'
 }
 
 export const getExplorerUrl = (chainId: ChainId) => {
