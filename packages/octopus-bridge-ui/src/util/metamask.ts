@@ -5,7 +5,9 @@ export async function addOctopus() {
   try {
     if (typeof window.ethereum !== 'undefined') {
       const permissions = await window.ethereum.request({
+        //@ts-ignore : unknown warning , following official docs from metamask https://docs.metamask.io/wallet/reference/json-rpc-methods/wallet_getpermissions/
         method: 'wallet_getPermissions',
+        //@ts-ignore: unknown warning
         params: []
       })
       console.log('permissions ', permissions)
@@ -39,7 +41,9 @@ export async function addArbitrumSepolia() {
   try {
     if (typeof window.ethereum !== 'undefined') {
       const permissions = await window.ethereum.request({
+        //@ts-ignore : unknown warning , following official docs from metamask https://docs.metamask.io/wallet/reference/json-rpc-methods/wallet_getpermissions/
         method: 'wallet_getPermissions',
+        //@ts-ignore: unknown warning
         params: []
       })
       console.log('permissions ', permissions)
