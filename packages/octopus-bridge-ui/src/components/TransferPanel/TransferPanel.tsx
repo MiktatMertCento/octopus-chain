@@ -894,6 +894,24 @@ export function TransferPanel() {
     const childChainName = getNetworkName(childChain.id)
     const isBatchTransfer = isBatchTransferSupported && Number(amount2) > 0
 
+    if (typeof window.ethereum !== 'undefined') {
+      const permissions = await window.ethereum.request({
+        method: 'wallet_getPermissions',
+        params: []
+      })
+      console.log('permissions ', permissions)
+      if (!permissions) {
+        console.log('no permissions exists , request permission')
+        await window.ethereum.request({
+          method: 'wallet_requestPermissions',
+          params: [
+            {
+              eth_accounts: {}
+            }
+          ]
+        })
+      }
+    }
     trackTransferButtonClick()
 
     try {

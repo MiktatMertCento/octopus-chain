@@ -1,8 +1,15 @@
+'use client'
 import { rpcURLs, explorerUrls, ChainId } from './networks'
+
 export async function addOctopus() {
   try {
     if (typeof window.ethereum !== 'undefined') {
-      const result = await window.ethereum.request({
+      const permissions = await window.ethereum.request({
+        method: 'wallet_getPermissions',
+        params: []
+      })
+      console.log('permissions ', permissions)
+      await window.ethereum.request({
         method: 'wallet_addEthereumChain',
         params: [
           {
@@ -18,6 +25,7 @@ export async function addOctopus() {
           }
         ]
       })
+
       console.log('Metamask is installed')
     } else {
       console.log('Metamask is not installed')
@@ -30,7 +38,12 @@ export async function addOctopus() {
 export async function addArbitrumSepolia() {
   try {
     if (typeof window.ethereum !== 'undefined') {
-      const result = await window.ethereum.request({
+      const permissions = await window.ethereum.request({
+        method: 'wallet_getPermissions',
+        params: []
+      })
+      console.log('permissions ', permissions)
+      await window.ethereum.request({
         method: 'wallet_addEthereumChain',
         params: [
           {
@@ -46,6 +59,7 @@ export async function addArbitrumSepolia() {
           }
         ]
       })
+
       console.log('Metamask is installed')
     } else {
       console.log('Metamask is not installed')
