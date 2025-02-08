@@ -4,6 +4,14 @@ import { rpcURLs, explorerUrls, ChainId } from './networks'
 export async function addOctopus() {
   try {
     if (typeof window.ethereum !== 'undefined') {
+      // await window.ethereum.request({
+      //   method: 'wallet_requestPermissions',
+      //   params: [
+      //     {
+      //       eth_accounts: {}
+      //     }
+      //   ]
+      // })
       const permissions = await window.ethereum.request({
         //@ts-ignore : unknown warning , following official docs from metamask https://docs.metamask.io/wallet/reference/json-rpc-methods/wallet_getpermissions/
         method: 'wallet_getPermissions',
@@ -47,6 +55,14 @@ export async function addOctopus() {
 export async function addArbitrumSepolia() {
   try {
     if (typeof window.ethereum !== 'undefined') {
+      // await window.ethereum.request({
+      //   method: 'wallet_requestPermissions',
+      //   params: [
+      //     {
+      //       eth_accounts: {}
+      //     }
+      //   ]
+      // })
       const permissions = await window.ethereum.request({
         //@ts-ignore : unknown warning , following official docs from metamask https://docs.metamask.io/wallet/reference/json-rpc-methods/wallet_getpermissions/
         method: 'wallet_getPermissions',

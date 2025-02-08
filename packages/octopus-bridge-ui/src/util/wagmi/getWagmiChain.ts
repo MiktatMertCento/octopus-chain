@@ -53,8 +53,8 @@ export function getWagmiChain(chainId: number): Chain {
     case ChainId.ArbitrumSepolia:
       return arbitrumSepolia
 
-    case ChainId.octupus:
-      return octupusChain
+    // case ChainId.octupus:
+    //   return octupusChain
 
     case ChainId.BaseSepolia:
       return baseSepolia

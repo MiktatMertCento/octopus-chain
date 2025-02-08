@@ -933,7 +933,7 @@ export function TransferPanel() {
           amount2: isBatchTransfer ? Number(amount2) : undefined,
           version: 2
         })
-
+        console.log('sourceChainId', sourceChainId)
         await switchNetworkAsync?.(sourceChainId)
       }
     } catch (error) {

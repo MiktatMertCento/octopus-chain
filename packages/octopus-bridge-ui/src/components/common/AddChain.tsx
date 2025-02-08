@@ -17,6 +17,8 @@ export const AddChainButton = () => {
   const isParentChainEthereum = isNetwork(
     parentChain.id
   ).isEthereumMainnetOrTestnet
+  console.log('parentChain.id', parentChain.id)
+  console.log('childChain.id', childChain.id)
 
   return (
     <div>
