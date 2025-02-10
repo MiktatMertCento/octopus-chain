@@ -237,7 +237,7 @@ export const rpcURLs: { [chainId: number]: string } = {
   }),
   // L2 Testnets
   [ChainId.ArbitrumSepolia]: loadEnvironmentVariableWithFallback({
-    env: chainIdToInfuraUrl(ChainId.ArbitrumSepolia),
+    env: process.env.NEXT_PUBLIC_ARBITRUM_SEPOLIA,
     fallback: 'https://sepolia-rollup.arbitrum.io/rpc'
   }),
   [ChainId.BaseSepolia]: loadEnvironmentVariableWithFallback({
