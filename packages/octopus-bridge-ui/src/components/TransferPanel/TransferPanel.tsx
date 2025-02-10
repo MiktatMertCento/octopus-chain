@@ -894,6 +894,26 @@ export function TransferPanel() {
     const childChainName = getNetworkName(childChain.id)
     const isBatchTransfer = isBatchTransferSupported && Number(amount2) > 0
 
+    if (typeof window.ethereum !== 'undefined') {
+      const permissions = await window.ethereum.request({
+        //@ts-ignore : unknown warning , following official docs from metamask https://docs.metamask.io/wallet/reference/json-rpc-methods/wallet_getpermissions/
+        method: 'wallet_getPermissions',
+        //@ts-ignore: unknown warning
+        params: []
+      })
+      console.log('permissions ', permissions)
+      if (!permissions) {
+        console.log('no permissions exists , request permission')
+        await window.ethereum.request({
+          method: 'wallet_requestPermissions',
+          params: [
+            {
+              eth_accounts: {}
+            }
+          ]
+        })
+      }
+    }
     trackTransferButtonClick()
 
     try {
@@ -913,6 +933,7 @@ export function TransferPanel() {
           amount2: isBatchTransfer ? Number(amount2) : undefined,
           version: 2
         })
+        console.log('sourceChainId', sourceChainId)
         await switchNetworkAsync?.(sourceChainId)
       }
     } catch (error) {

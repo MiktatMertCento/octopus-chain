@@ -27,7 +27,7 @@ export const SearchPanelTable = ({
   isDialog
 }: PropsWithChildren<SearchPanelTableProps>) => {
   return (
-    <div className="flex w-[calc(100vw_-_60px)] flex-col gap-3 md:w-full">
+    <div className="z-20 flex h-full w-[calc(100vw_-_60px)] flex-col gap-3 opacity-100 md:w-full">
       <form onSubmit={onSubmit} className="flex flex-col">
         <div className="flex items-stretch gap-2">
           <div className="relative flex h-full w-full grow items-center rounded     bg-black/30 px-2 text-white shadow-input">
@@ -47,9 +47,12 @@ export const SearchPanelTable = ({
         )}
       </form>
       <div
+        // className={twMerge(
+        //   'sm:shadow-search-panel h-[calc(100vh_-_200px)] rounded   bg-[#161618] opacity-100 sm:bg-[#161618]/30 md:h-[calc(100vh_-_390px)]',
+        //   isDialog ? 'md:max-h-[700px]' : 'md:max-h-[200px]'
+        // )}
         className={twMerge(
-          'sm:shadow-search-panel h-[calc(100vh_-_200px)] rounded   bg-black/30 md:h-[calc(100vh_-_390px)]',
-          isDialog ? 'md:max-h-[700px]' : 'md:max-h-[200px]'
+          'sm:shadow-search-panel h-[20rem] rounded   bg-[#161618] opacity-100 sm:bg-[#161618]/30 md:h-[20rem]'
         )}
         data-cy={dataCy}
       >

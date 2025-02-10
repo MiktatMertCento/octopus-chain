@@ -231,7 +231,7 @@ function NetworksPanel({
 
     const coreNetworks = [421614]
 
-    const orbitNetworks = [75814]
+    const orbitNetworks = [53574309564]
     const moreNetworks: any[] = []
     // const coreNetworks = chainIds.filter(
     //   chainId => isNetwork(chainId).isCoreChain

@@ -62,6 +62,16 @@ export function sanitizeQueryParams({
   destinationChainId: ChainId | number
 } {
   // when both `sourceChain` and `destinationChain` are undefined or invalid, default to Ethereum and Arbitrum One
+
+  if (
+    sourceChainId == ChainId.Sepolia ||
+    destinationChainId == ChainId.Sepolia
+  ) {
+    return {
+      sourceChainId: ChainId.ArbitrumSepolia,
+      destinationChainId: ChainId.octupus
+    }
+  }
   if (
     (!sourceChainId && !destinationChainId) ||
     (!isSupportedChainId(sourceChainId) &&

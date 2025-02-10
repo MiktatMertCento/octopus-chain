@@ -40,12 +40,18 @@ function handleSwitchNetworkError(
   const { isSwitchingNetworkBeforeTx } = context as {
     isSwitchingNetworkBeforeTx: boolean
   }
+
+  console.log('error:', error)
   if (isUserRejectedError(error)) {
     return
   }
+
   if (error.name === 'SwitchChainNotSupportedError') {
+    console.log(' error log 1')
     handleSwitchNetworkNotSupported(chainId, isSwitchingNetworkBeforeTx)
   } else {
+    console.log('error log 2')
+    handleSwitchNetworkNotSupported(chainId, isSwitchingNetworkBeforeTx)
     captureSentryErrorWithExtraData({
       error,
       originFunction: 'handleSwitchNetworkError'
@@ -74,6 +80,6 @@ export function useSwitchNetworkWithConfig({
     onMutate: () => ({ isSwitchingNetworkBeforeTx }),
     onError: handleSwitchNetworkError
   }
-
+  // console.log('config', config)
   return useSwitchNetwork(config)
 }

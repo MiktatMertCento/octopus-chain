@@ -138,7 +138,7 @@ export function HeaderAccountPopover({
             {/* Explorer button */}
             {isCorrectNetworkConnected && chain && (
               <ExternalLink
-                href={`${getExplorerUrl(chain.id)}/address/${address}`}
+                href={`https://testnet.explorer.o3layer.com/address/${address}`}
                 className={headerItemsClassName}
               >
                 <ArrowTopRightOnSquareIcon className="h-3 w-3 text-white/60 sm:text-white" />

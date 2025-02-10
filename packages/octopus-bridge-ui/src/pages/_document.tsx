@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
-export const siteTitle = 'O3 Layer Devnet'
+export const siteTitle = 'O3 Layer Testnet'
 const siteDomain = 'https://octopus-bridge-ui.vercel.app/'
 const siteDescription = 'Octopus Chain Bridge Ui'
 
