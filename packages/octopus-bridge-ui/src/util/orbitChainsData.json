@@ -1159,7 +1159,7 @@
       "rpcUrl": "https://testnet.rpc.o3layer.com",
       "isCustom": true,
       "isTestnet": true,
-      "name": "Octopus Testnet",
+      "name": "O3Layer Testnet",
       "slug": "octopus-testnet",
       "parentChainId": 421614,
       "tokenBridge": {
@@ -1181,9 +1181,9 @@
       "bridgeUiConfig": {
         "color": "#5E4A90",
         "network": {
-          "name": "Octopus Testnet",
-          "logo": "/icons/octopusChain.png",
-          "description": "Octopus L3 chain"
+          "name": "O3Layer Testnet",
+          "logo": "/icons/octopusToken.png",
+          "description": "O3Layer L3 chain"
         },
         "nativeTokenData": {
           "name": "03 Token",
