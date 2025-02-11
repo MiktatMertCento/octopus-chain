@@ -67,7 +67,7 @@ export const AddOctupus = () => {
           alt="metamask logo"
           className="mr-2"
         />
-        Add Octopus
+        Add O3Layer
       </button>
     </div>
   )
