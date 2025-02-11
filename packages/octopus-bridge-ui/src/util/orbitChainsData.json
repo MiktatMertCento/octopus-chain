@@ -1182,14 +1182,14 @@
         "color": "#5E4A90",
         "network": {
           "name": "O3 Layer",
-          "logo": "/icons/o3Logo.png",
+          "logo": "/icons/o3logo.png",
           "description": "O3 Layer testnet"
         },
         "nativeTokenData": {
           "name": "03 Token",
           "symbol": "03",
           "decimals": 18,
-          "logoUrl": "/icons/o3Logo.png"
+          "logoUrl": "/icons/o3logo.png"
         }
       }
     },
