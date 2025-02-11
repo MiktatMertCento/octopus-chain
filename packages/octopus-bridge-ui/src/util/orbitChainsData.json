@@ -1159,8 +1159,8 @@
       "rpcUrl": "https://testnet.rpc.o3layer.com",
       "isCustom": true,
       "isTestnet": true,
-      "name": "Octopus Testnet",
-      "slug": "octopus-testnet",
+      "name": "O3Layer",
+      "slug": "o3-layer",
       "parentChainId": 421614,
       "tokenBridge": {
         "parentCustomGateway": "0x00c8D9b65A5ED0CDCA4E97A78462c096752174EE",
@@ -1181,15 +1181,15 @@
       "bridgeUiConfig": {
         "color": "#5E4A90",
         "network": {
-          "name": "Octopus Testnet",
-          "logo": "/icons/octopusChain.png",
-          "description": "Octopus L3 chain"
+          "name": "O3 Layer",
+          "logo": "/o3Logo.png",
+          "description": "O3 Layer testnet"
         },
         "nativeTokenData": {
           "name": "03 Token",
           "symbol": "03",
           "decimals": 18,
-          "logoUrl": "/icons/octopusToken.png"
+          "logoUrl": "/o3Logo.png"
         }
       }
     },

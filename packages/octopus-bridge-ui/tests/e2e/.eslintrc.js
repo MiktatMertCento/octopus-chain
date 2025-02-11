@@ -8,9 +8,7 @@ const synpressPath = path.join(
 module.exports = {
   extends: `${synpressPath}/.eslintrc.js`,
   parserOptions: {
-    project: path.resolve(
-      './packages/octopus-bridge-ui/tests/e2e/tsconfig.json'
-    )
+    project: path.resolve('./packages/o3/tests/e2e/tsconfig.json')
   },
   rules: {
     'jest/expect-expect': [

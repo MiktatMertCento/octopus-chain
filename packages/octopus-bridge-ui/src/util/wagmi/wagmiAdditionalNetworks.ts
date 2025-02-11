@@ -117,10 +117,10 @@ export const baseSepolia: Chain = {
   }
 }
 
-export const octupusChain: Chain = {
-  id: ChainId.octupus,
-  name: 'octopus-testnet',
-  network: 'octopus-testnet',
+export const o3Chain: Chain = {
+  id: ChainId.o3,
+  name: 'o3-layer',
+  network: 'o3-layer',
   nativeCurrency: {
     name: 'O3',
     symbol: 'O3',
@@ -128,18 +128,18 @@ export const octupusChain: Chain = {
   },
   rpcUrls: {
     default: {
-      http: [rpcURLs[ChainId.octupus]!]
+      http: [rpcURLs[ChainId.o3]!]
     },
     public: {
-      http: [rpcURLs[ChainId.octupus]!]
+      http: [rpcURLs[ChainId.o3]!]
     }
   },
   blockExplorers: {
     etherscan: {
-      name: 'octoScan',
-      url: explorerUrls[ChainId.octupus]!
+      name: 'o3Scan',
+      url: explorerUrls[ChainId.o3]!
     },
-    default: { name: 'octoScan', url: explorerUrls[ChainId.octupus]! }
+    default: { name: 'o3Scan', url: explorerUrls[ChainId.o3]! }
   }
 }
 

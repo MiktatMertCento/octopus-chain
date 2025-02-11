@@ -207,7 +207,7 @@ describe("Transforms", () => {
       process.cwd(),
       "..",
       "..",
-      "octopus-bridge-ui",
+      "o3-bridge-ui",
       "public",
       "images",
       "downloaded_chain_logo.png"
@@ -245,7 +245,7 @@ describe("Transforms", () => {
         process.cwd(),
         "..",
         "..",
-        "octopus-bridge-ui",
+        "o3-bridge-ui",
         "public",
         savedImagePath
       );
@@ -320,7 +320,7 @@ const saveImageLocally = (
     process.cwd(),
     "..",
     "..",
-    "octopus-bridge-ui",
+    "o3-bridge-ui",
     "public",
     imageSavePath
   );

@@ -17,7 +17,7 @@ import {
   getL2NetworkConfig
 } from './common'
 import { shortenAddress } from '../../src/util/CommonUtils'
-import { formatAmount } from 'packages/octopus-bridge-ui/src/util/NumberUtils'
+import { formatAmount } from 'packages/o3/src/util/NumberUtils'
 
 function shouldChangeNetwork(networkName: NetworkName) {
   // synpress throws if trying to connect to a network we are already connected to

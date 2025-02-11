@@ -175,7 +175,6 @@ function ResponsiveAppBar({ wallet, marginBelow }: ResponsiveAppBarProps) {
               alt="mobile e logo"
               className="p-1"
             />
-            {/* <h1 className="text-3xl font-semibold  text-white">Octopus</h1> */}
           </Box>
 
           {/* Web Links */}

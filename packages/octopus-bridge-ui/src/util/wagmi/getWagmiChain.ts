@@ -11,8 +11,7 @@ import {
   localL2Network,
   localL3Network,
   baseSepolia,
-  base,
-  octupusChain
+  base
 } from './wagmiAdditionalNetworks'
 import { ChainId } from '../networks'
 import { getCustomChainFromLocalStorageById } from '../networks'
@@ -52,9 +51,6 @@ export function getWagmiChain(chainId: number): Chain {
 
     case ChainId.ArbitrumSepolia:
       return arbitrumSepolia
-
-    // case ChainId.octupus:
-    //   return octupusChain
 
     case ChainId.BaseSepolia:
       return baseSepolia

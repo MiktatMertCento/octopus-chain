@@ -17,7 +17,7 @@ module.exports = {
       version: "detect",
     },
     next: {
-      rootDir: "packages/octopus-bridge-ui/",
+      rootDir: "packages/o3-bridge-ui/",
     },
   },
   rules: {

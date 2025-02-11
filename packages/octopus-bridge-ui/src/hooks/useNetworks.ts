@@ -69,7 +69,7 @@ export function sanitizeQueryParams({
   ) {
     return {
       sourceChainId: ChainId.ArbitrumSepolia,
-      destinationChainId: ChainId.octupus
+      destinationChainId: ChainId.o3
     }
   }
   if (
@@ -79,7 +79,7 @@ export function sanitizeQueryParams({
   ) {
     return {
       sourceChainId: ChainId.ArbitrumSepolia,
-      destinationChainId: ChainId.octupus
+      destinationChainId: ChainId.o3
     }
   }
 
@@ -93,7 +93,7 @@ export function sanitizeQueryParams({
     if (typeof defaultSourceChainId === 'undefined') {
       return {
         sourceChainId: ChainId.ArbitrumSepolia,
-        destinationChainId: ChainId.octupus
+        destinationChainId: ChainId.o3
       }
     }
 
@@ -110,7 +110,7 @@ export function sanitizeQueryParams({
     if (typeof defaultDestinationChainId === 'undefined') {
       return {
         sourceChainId: ChainId.ArbitrumSepolia,
-        destinationChainId: ChainId.octupus
+        destinationChainId: ChainId.o3
       }
     }
 

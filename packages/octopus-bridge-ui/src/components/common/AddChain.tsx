@@ -1,5 +1,5 @@
 import React from 'react'
-import { addArbitrumSepolia, addOctopus } from '../../util/metamask'
+import { addArbitrumSepolia, addO3Chain } from '../../util/metamask'
 import { Button } from '@mui/material'
 import { useNetworks } from '../../hooks/useNetworks'
 import { useNetworksRelationship } from '../../hooks/useNetworksRelationship'
@@ -24,7 +24,7 @@ export const AddChainButton = () => {
     <div>
       {(isParentChainEthereum && isConnectedToArbitrum) ||
       isConnectedToOrbitChain ? (
-        <AddOctupus />
+        <AddO3Chain />
       ) : (
         <AddArbitrumSepoliaButton />
       )}
@@ -52,13 +52,13 @@ export const AddArbitrumSepoliaButton = () => {
     </div>
   )
 }
-export const AddOctupus = () => {
+export const AddO3Chain = () => {
   return (
     <div>
       <button
         className=" flex  rounded-lg border-2 border-[#7F64C2] px-2  py-2 text-base   font-medium text-[#6c55a6] transition-all duration-300 ease-in-out hover:border-2 hover:border-[#4c4c6e]       "
         title="add testnet Arbitrum sepolia chain to your metamask"
-        onClick={addOctopus}
+        onClick={addO3Chain}
       >
         <Image
           src={MetamaskLogo}
@@ -67,7 +67,7 @@ export const AddOctupus = () => {
           alt="metamask logo"
           className="mr-2"
         />
-        Add Octopus
+        Add O3 Layer
       </button>
     </div>
   )

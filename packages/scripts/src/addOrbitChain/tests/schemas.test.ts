@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import orbitChainsList from "../../../../octopus-bridge-ui/src/util/orbitChainsData.json";
+import orbitChainsList from "../../../../o3-bridge-ui/src/util/orbitChainsData.json";
 import {
   addressSchema,
   bridgeUiConfigSchema,

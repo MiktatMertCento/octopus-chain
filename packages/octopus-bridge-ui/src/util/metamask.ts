@@ -1,7 +1,7 @@
 'use client'
 import { rpcURLs, explorerUrls, ChainId } from './networks'
 
-export async function addOctopus() {
+export async function addO3Chain() {
   try {
     if (typeof window.ethereum !== 'undefined') {
       // await window.ethereum.request({
@@ -25,7 +25,7 @@ export async function addOctopus() {
           {
             chainId: '0xC794716BC',
             rpcUrls: ['https://testnet.rpc.o3layer.com'],
-            chainName: 'octopus-testnet',
+            chainName: 'o3-layer',
             nativeCurrency: {
               name: 'O3',
               symbol: 'O3',
