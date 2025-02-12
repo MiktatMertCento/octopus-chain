@@ -1,11 +1,7 @@
 import localFont from 'next/font/local'
 import React from 'react'
 import { twMerge } from 'tailwind-merge'
-import Image from 'next/image'
-import EclipseBottom from '@/images/eclipse_bottom.png'
 
-import { SiteBanner } from './SiteBanner'
-import { AppSidebar } from '../Sidebar/AppSidebar'
 import { Toast } from './atoms/Toast'
 
 import 'react-toastify/dist/ReactToastify.css'
@@ -41,16 +37,7 @@ export function Layout(props: LayoutProps) {
     <div className={twMerge('relative flex-col', unica.className)}>
       <div className="relative flex flex-col sm:min-h-screen">
         <div className="flex flex-row">
-          <main className="grow">
-            {/* 
-                Warning: DO NOT remove the `SiteBanner` component. 
-                It also dynamically displays Arbiscan/Novascan status. 
-                To hide or remove its content, simply empty out its children instead of removing the entire component. 
-              */}
-            <SiteBanner />
-
-            {props.children}
-          </main>
+          <main className="grow">{props.children}</main>
 
           <Toast />
         </div>

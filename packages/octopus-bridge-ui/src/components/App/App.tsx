@@ -245,13 +245,6 @@ function AppContent() {
           <MainContent />
         </div>
       </Fade>
-      {/* <Header>
-        <HeaderAccountPopover />
-      </Header>
-      <TokenListSyncer />
-      <BalanceUpdater />
-      <ArbTokenBridgeStoreSyncWrapper />
-      <MainContent /> */}
     </>
   )
 }
